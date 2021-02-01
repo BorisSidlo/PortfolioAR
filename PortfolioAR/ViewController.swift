@@ -60,11 +60,16 @@ class ViewController: UIViewController {
         
         }
     
-   // extension ViewController: ARSessionDelegate{
-       // func session(_session:ARSession, didAdd anchors: [ARAnchor]){
-      //      if let anchor =
-     //   }
-  //  }
+   extension ViewController: ARSessionDelegate{
+        func session(_session:ARSession, didAdd anchors: [ARAnchor]){
+            for anchor in anchors{
+                if let anchorName = anchor.name, anchorName == "ContemporaryFan"{
+                    // place object with name for specification 
+                    placeObject(named: anchorName, for: anchor)
+                }
+            }
+       }
+    }
 
 
 
