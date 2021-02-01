@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         // overvider deafult ar kit
         super.viewDidAppear(animated)
         
+        arView.session.isEqual(self)
         setupARview()
         
         arView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:))))
@@ -60,11 +61,24 @@ class ViewController: UIViewController {
         
         }
     
+    
+    func placeObject(named entityName:String,for anchor: ARAnchor){
+        // we create model entity
+        let entity = try! ModelEntity.loadModel(named: entityName)
+        
+        //drag and rotate
+        arView.installGestures([.rotation, .translation], for: entity)
+        let anchorEntity = AnchorEntity(anchor:anchor)
+        anchorEntity.addChild(entity)
+        arView.scene.addAnchor(anchorEntity)
+    }
+    
+}
    extension ViewController: ARSessionDelegate{
         func session(_session:ARSession, didAdd anchors: [ARAnchor]){
             for anchor in anchors{
                 if let anchorName = anchor.name, anchorName == "ContemporaryFan"{
-                    // place object with name for specification 
+                    // place object with name for specification
                     placeObject(named: anchorName, for: anchor)
                 }
             }
@@ -89,4 +103,4 @@ class ViewController: UIViewController {
     
     
   
-}
+

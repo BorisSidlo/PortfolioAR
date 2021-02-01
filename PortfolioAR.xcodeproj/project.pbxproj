@@ -15,6 +15,7 @@
 		55BAEB6A25C77D10005CDD9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BAEB6825C77D10005CDD9C /* LaunchScreen.storyboard */; };
 		55BAEB7525C77D10005CDD9C /* PortfolioARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAEB7425C77D10005CDD9C /* PortfolioARTests.swift */; };
 		55BAEB8025C77D11005CDD9C /* PortfolioARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAEB7F25C77D11005CDD9C /* PortfolioARUITests.swift */; };
+		55BAEBAB25C8942E005CDD9C /* Apricot_02_hi_poly.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 55BAEBAA25C8942E005CDD9C /* Apricot_02_hi_poly.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		55BAEB7B25C77D11005CDD9C /* PortfolioARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortfolioARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BAEB7F25C77D11005CDD9C /* PortfolioARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioARUITests.swift; sourceTree = "<group>"; };
 		55BAEB8125C77D11005CDD9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BAEBAA25C8942E005CDD9C /* Apricot_02_hi_poly.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Apricot_02_hi_poly.usdz; path = ../../../../../../../3D/Apricot_02_hi_poly.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		55BAEB5C25C77D10005CDD9C /* PortfolioAR */ = {
 			isa = PBXGroup;
 			children = (
+				55BAEBAA25C8942E005CDD9C /* Apricot_02_hi_poly.usdz */,
 				55BAEB5D25C77D10005CDD9C /* AppDelegate.swift */,
 				55BAEB5F25C77D10005CDD9C /* ViewController.swift */,
 				55BAEB6125C77D10005CDD9C /* Experience.rcproject */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55BAEB6A25C77D10005CDD9C /* LaunchScreen.storyboard in Resources */,
+				55BAEBAB25C8942E005CDD9C /* Apricot_02_hi_poly.usdz in Resources */,
 				55BAEB6725C77D10005CDD9C /* Assets.xcassets in Resources */,
 				55BAEB6525C77D10005CDD9C /* Main.storyboard in Resources */,
 			);
